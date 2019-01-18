@@ -20,6 +20,8 @@
   "homepage": "https://github.com/EmilSchroder/node-cms-template#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }
