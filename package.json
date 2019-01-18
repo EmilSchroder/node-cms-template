@@ -1,0 +1,25 @@
+{
+  "name": "node-cms-template",
+  "version": "1.0.0",
+  "description": "const # node-cms-template Starter CMS for a blog site, to be used as a base template",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmilSchroder/node-cms-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmilSchroder/node-cms-template/issues"
+  },
+  "homepage": "https://github.com/EmilSchroder/node-cms-template#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
