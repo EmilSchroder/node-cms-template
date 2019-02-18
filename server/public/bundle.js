@@ -24089,9 +24089,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var App = function App() {
   return _react2.default.createElement(
-    'div',
+    _react2.default.Fragment,
     null,
-    'Hi There'
+    _react2.default.createElement(Homepage, null),
+    _react2.default.createElement(About, null),
+    _react2.default.createElement(Products, null),
+    _react2.default.createElement(Blog, null),
+    _react2.default.createElement(Config, null)
   );
 };
 
