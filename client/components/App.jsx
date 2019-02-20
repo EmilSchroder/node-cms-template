@@ -1,14 +1,18 @@
 import React from 'react'
+import {Hashrouter as Router, Route, Link} from 'react-router-dom'
 
 const App = () => {
+
   return(
-    <React.Fragment>
-      <Homepage />
-      <About />
-      <Products />
-      <Blog />
-      <Config />
-    </React.Fragment>
+    <Router>
+      <React.Fragment>
+        <Route exact path='/' render={<Homepage />} />
+        {/* <About />
+        <Products /> */}
+        <Route path='blog' render={<Blog />} />
+        {/* <Config /> */}
+      </React.Fragment>
+    </Router>
   )
 }
 
