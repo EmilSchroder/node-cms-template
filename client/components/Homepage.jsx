@@ -10,7 +10,6 @@ class Homepage extends React.Component{
             <div>Hi Ya'll</div>
         )
     }
-
-
-    
 }
+
+export default Homepage

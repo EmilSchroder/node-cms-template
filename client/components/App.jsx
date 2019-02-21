@@ -1,19 +1,30 @@
 import React from 'react'
 import {Hashrouter as Router, Route, Link} from 'react-router-dom'
 
-const App = () => {
+import Homepage from './Homepage'
+import Blog from './Blog'
 
-  return(
-    <Router>
-      <React.Fragment>
-        <Route exact path='/' render={<Homepage />} />
-        {/* <About />
-        <Products /> */}
-        <Route path='blog' render={<Blog />} />
-        {/* <Config /> */}
-      </React.Fragment>
-    </Router>
+class App extends React.Component{
+
+  constructor(props){
+    super(props)
+  }
+
+  render(){
+      return(
+        <Router>
+          <React.Fragment>
+            <Route exact path='/' render={(props) => (
+            <Homepage /> )
+            } />
+            <Route path='/blog' render={(props) => (
+            <Blog /> )
+            } />
+          </React.Fragment>
+        </Router>
   )
+  }
+
 }
 
 export default App
