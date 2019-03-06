@@ -4,8 +4,13 @@ import {Hashrouter as Router, Route} from 'react-router-dom'
 import Homepage from './Homepage'
 import Blog from './Blog'
 
-const App = () => {
+class App extends React.Component{
 
+  constructor(props){
+    super(props)
+  }
+
+  render(){
       return(
         <Router>
           <div>
@@ -18,5 +23,7 @@ const App = () => {
           </div>
         </Router>
   )
+  }
+
 }
 export default App
